@@ -25,7 +25,7 @@ with tab1:
             st.write('Virginica')
     if st.button('View Report'):
         st.image('Decision Tree/decision_tree (5).png')
-        cr_df=pd.DataFrame(classification_report)
+        cr_df=pd.DataFrame(classification_report).transpose()
         st.write(cr_df)
         st.write(confusion_matrix)
         st.write(accuracy_score)
@@ -42,6 +42,7 @@ with tab1:
             text_content = buffer.getvalue()
             
             
+
 
 
 
