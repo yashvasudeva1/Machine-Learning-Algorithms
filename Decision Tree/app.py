@@ -37,7 +37,8 @@ with tab1:
               buffer.write("\n" + "="*40 + "\n")
               buffer.write("End of report\n")
               text_content = buffer.getvalue()
-              data=text_content)
+              data=text_content
+
 
 
 
