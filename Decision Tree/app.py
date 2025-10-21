@@ -11,6 +11,7 @@ with tab1:
     petal_length=st.number_input('petal_length',0.0,10.0)
     petal_width=st.number_input('petal_width',0.0,10.0)
     if st.button('Predict'):
+        st.write(type(model))
         prediction=model.predict([[sepal_length,sepal_width,petal_length,petal_width]])
         st.write(prediction)
         if prediction[0]==0:
@@ -39,6 +40,7 @@ with tab1:
           buffer.write("\n" + "="*40 + "\n")
           buffer.write("End of report\n")
           text_content = buffer.getvalue()
+
 
 
 
