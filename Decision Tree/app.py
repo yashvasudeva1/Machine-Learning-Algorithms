@@ -5,7 +5,7 @@ model=joblib.load('Decision Tree/Decision_Tree.pkl')
 model=data['model']
 classificationreport=data['classificationreport']
 accuracyscore=data['accuracyscore']
-confusionmatrix=data['confusionmatrix]
+confusionmatrix=data['confusionmatrix']
 st.title('Decision Tree Classifier')
 tab1,tab2,tab3=st.tabs(['Unhyperparameterized','Hyperparameterized with Postpruning', 'Hyperparameterized with Prepruning'])
 with tab1:
@@ -44,6 +44,7 @@ with tab1:
           buffer.write("\n" + "="*40 + "\n")
           buffer.write("End of report\n")
           text_content = buffer.getvalue()
+
 
 
 
