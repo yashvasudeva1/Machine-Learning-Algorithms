@@ -24,20 +24,8 @@ with tab1:
             st.write('Virginica')
         if st.button('View Report'):
             st.image('Decision Tree/decision_tree (5).png')
-            st.write(classification_report)
-            st.write(confusion_matrix)
-            st.write(accuracy_score)
-            if st.download_button(label="Download Metrics as Text File",
-              file_name="classification_report.txt",
-              mime="text/plain"):
-              buffer = StringIO()
-              buffer.write("Decision Tree Classification Report\n")
-              buffer.write("="*40 + "\n\n")
-              buffer.write(report)
-              buffer.write("\n" + "="*40 + "\n")
-              buffer.write("End of report\n")
-              text_content = buffer.getvalue()
-              data=text_content
+            
+
 
 
 
