@@ -22,9 +22,10 @@ with tab1:
             st.write('Versicolor')
         else:
             st.write('Virginica')
-        if st.button('View Report'):
-            st.write("Hello")
+    if st.button('View Report'):
+        st.write("Hello")
             
+
 
 
 
