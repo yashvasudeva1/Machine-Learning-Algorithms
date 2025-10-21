@@ -23,7 +23,7 @@ with tab1:
         else:
             st.write('Virginica')
     if st.button('View Report'):
-        st.image()
+        st.image('Decision Tree/decision_tree (5).png')
         st.write(classification_report)
         st.write(confusion_matrix)
         st.write(accuracy_score)
@@ -39,6 +39,7 @@ with tab1:
             text_content = buffer.getvalue()
             data=text_content
             
+
 
 
 
