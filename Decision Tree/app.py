@@ -24,7 +24,6 @@ with tab1:
             st.write('Virginica')
         if st.button('View Report'):
             st.image('Decision Tree/decision_tree (5).png')
-            model.classification_report(y_test,y_pred)
             st.write(classification_report)
             st.write(confusion_matrix)
             st.write(accuracy_score)
@@ -39,6 +38,7 @@ with tab1:
               buffer.write("\n" + "="*40 + "\n")
               buffer.write("End of report\n")
               text_content = buffer.getvalue()
+
 
 
 
