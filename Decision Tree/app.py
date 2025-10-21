@@ -3,9 +3,9 @@ import joblib
 from io import StringIO
 data=joblib.load('Decision Tree/Decision_Tree.pkl')
 model=data['model']
-classificationreport=data['classificationreport']
-accuracyscore=data['accuracyscore']
-confusionmatrix=data['confusionmatrix']
+classification_report=data['classificationreport']
+accuracy_score=data['accuracyscore']
+confusion_matrix=data['confusionmatrix']
 st.title('Decision Tree Classifier')
 tab1,tab2,tab3=st.tabs(['Unhyperparameterized','Hyperparameterized with Postpruning', 'Hyperparameterized with Prepruning'])
 with tab1:
@@ -29,9 +29,9 @@ with tab1:
           st.image()
         with col2:
           model.classification_report(y_test,y_pred)
-          st.write(classification_report(y_test,y_pred))
-          st.write(confusion_matrix(y_test,y_pred))
-          st.write(accuracy_score(y_test,y_pred))
+          st.write(classification_report)
+          st.write(confusion_matrix)
+          st.write(accuracy_score)
         if st.download_button(label="Download Metrics as Text File",
           data=text_content,
           file_name="classification_report.txt",
@@ -43,6 +43,7 @@ with tab1:
           buffer.write("\n" + "="*40 + "\n")
           buffer.write("End of report\n")
           text_content = buffer.getvalue()
+
 
 
 
