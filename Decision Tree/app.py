@@ -24,7 +24,8 @@ with tab1:
             st.write('Virginica')
     if st.button('View Report'):
         st.image('Decision Tree/decision_tree (5).png')
-        st.write(classification_report)
+        cr_df=pd.DataFrame(classification_report)
+        st.write(cr_df)
         st.write(confusion_matrix)
         st.write(accuracy_score)
         if st.download_button(label="Download Metrics as Text File",
@@ -40,6 +41,7 @@ with tab1:
             text_content = buffer.getvalue()
             
             
+
 
 
 
