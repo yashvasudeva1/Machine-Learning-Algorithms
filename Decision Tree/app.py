@@ -28,6 +28,7 @@ with tab1:
         st.write(confusion_matrix)
         st.write(accuracy_score)
         if st.download_button(label="Download Metrics as Text File",
+            data=text_content,
             file_name="classification_report.txt",
             mime="text/plain"):
             buffer = StringIO()
@@ -37,8 +38,9 @@ with tab1:
             buffer.write("\n" + "="*40 + "\n")
             buffer.write("End of report\n")
             text_content = buffer.getvalue()
-            data=text_content
             
+            
+
 
 
 
