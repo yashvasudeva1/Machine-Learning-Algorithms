@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 from io import StringIO
+import pandas as pd
 data=joblib.load('Decision Tree/Decision_Tree.pkl')
 model=data['model']
 classification_report=data['Classification Report']
@@ -41,6 +42,7 @@ with tab1:
             text_content = buffer.getvalue()
             
             
+
 
 
 
