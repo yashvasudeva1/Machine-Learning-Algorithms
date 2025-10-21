@@ -3,7 +3,7 @@ import joblib
 from io import StringIO
 model=joblib.load('Decision Tree/Decision_Tree.pkl')
 st.title('Decision Tree Classifier')
-tab1,tab2=st.tabs(['Unhyperparameterized','Hyperparameterized with Postpruning', 'Hyperparameterized with Prepruning'])
+tab1,tab2,tab3=st.tabs(['Unhyperparameterized','Hyperparameterized with Postpruning', 'Hyperparameterized with Prepruning'])
 with tab1:
     st.header('Unhyperparameterized')
     sepal_length=st.number_input('sepal_length',0.0,10.0)
@@ -39,5 +39,6 @@ with tab1:
           buffer.write("\n" + "="*40 + "\n")
           buffer.write("End of report\n")
           text_content = buffer.getvalue()
+
 
 
