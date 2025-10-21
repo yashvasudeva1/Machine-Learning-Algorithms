@@ -23,8 +23,9 @@ with tab1:
         else:
             st.write('Virginica')
         if st.button('View Report'):
-            st.image('Decision Tree/decision_tree (5).png')
+            st.write("Hello")
             
+
 
 
 
